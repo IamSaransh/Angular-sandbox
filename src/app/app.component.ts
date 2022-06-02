@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
   // both are inline
 })
 export class AppComponent {
+  userName =  '';
+
+  isUsernameBlank(){
+    if(this.userName === '')
+     return true;
+    else
+      return false;
+  }
+  
+  resetsUserName(){
+    this.userName = '';
+  }
 }
